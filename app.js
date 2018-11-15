@@ -1,17 +1,18 @@
 var canvas = document.getElementById("graph");
 var c = canvas.getContext('2d');
-var Breite = canvas.width;
-var Höhe = canvas.height;
+var Breite;
+var Höhe;
 
 var canvas2 = document.getElementById("muster");
 var c2 = canvas2.getContext('2d');
-var Breite2 = canvas2.width;
-var Höhe2 = canvas2.height;
+var Breite2;
+var Höhe2;
 
 init();
 draw();
 
 function draw() {
+  location.href = '#canvases';
   c.clearRect(0, 0, Breite, Höhe);
   //millimeter zu meter konvertieren
   var g = document.getElementById("g").value / 1000;
@@ -53,6 +54,11 @@ function phase(ed, a, sd, lambda) {
 }
 
 function init() {
+  canvas.width = Breite = canvas.clientWidth;
+  canvas.height = Höhe = canvas.clientHeight;
+
+  canvas2.width = Breite2 = canvas2.clientWidth;
+  canvas2.height = Höhe2 = canvas2.clientHeight;
   document.getElementById("g").value = 0.04;
   document.getElementById("N").value = 10;
   document.getElementById("a").value = 4;

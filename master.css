@@ -4,6 +4,7 @@ html {
   box-sizing: border-box;
   font-size: 22px;
   font-family: 'Roboto', sans-serif, Helvetica, Verdana;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -64,7 +65,7 @@ form {
   padding: .08rem .6rem;;
 }
 
-#btn-container * {
+#btn-container button {
   border-radius: 15rem;
   margin: 2rem;
   padding: 1rem 2rem;
@@ -72,6 +73,7 @@ form {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 #reset {
