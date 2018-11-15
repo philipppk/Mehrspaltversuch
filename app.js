@@ -13,11 +13,11 @@ draw();
 
 function draw() {
   c.clearRect(0, 0, Breite, Höhe);
-  var g = document.getElementById("g").value;
+  var g = document.getElementById("g").value / 1000;
   var N = document.getElementById("N").value;
   var a = document.getElementById("a").value;
   var projektor = document.getElementById("projektor").value;
-  var lambda = document.getElementById("lambda").value;
+  var lambda = document.getElementById("lambda").value / Math.pow(10, 9);
   var method = document.getElementById("method").value;
 
   var spalt = [];
@@ -51,10 +51,10 @@ function phase(ed, a, sd, lambda) {
 }
 
 function init() {
-  document.getElementById("g").value = 0.00004;
+  document.getElementById("g").value = 0.04;
   document.getElementById("N").value = 10;
   document.getElementById("a").value = 4;
   document.getElementById("projektor").value = 0.5;
-  document.getElementById("lambda").value = 0.00000078;
+  document.getElementById("lambda").value = 780;
   document.getElementById("method").value = "true";
 }
