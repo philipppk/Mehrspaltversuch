@@ -13,20 +13,22 @@ draw();
 
 function draw() {
   c.clearRect(0, 0, Breite, Höhe);
+  //millimeter zu meter konvertieren
   var g = document.getElementById("g").value / 1000;
   var N = document.getElementById("N").value;
   var a = document.getElementById("a").value;
   var projektor = document.getElementById("projektor").value;
+  //nanometer zu meter konvertieren
   var lambda = document.getElementById("lambda").value / Math.pow(10, 9);
   var method = document.getElementById("method").value;
 
   var spalt = [];
-  for (var i = 0; i < N; i++) {
+  for (let i = 0; i < N; i++) {
     spalt[i] = i * g;
   }
 
   c.beginPath();
-  for (var i = 0; i < Breite; i++) {
+  for (let i = 0; i < Breite; i++) {
     var x = 0;
     var y = 0;
     for (var j = 0; j < N; j++) {
