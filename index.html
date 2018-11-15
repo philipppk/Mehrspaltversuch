@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Mehrfachspalt</title>
+		<link rel="stylesheet" href="master.css">
+	</head>
+	<body>
+		<section id="form-data">
+		<form>
+			<div class="form-el-container">
+				<p>Spaltmittenabstand in nm:</p>
+				<input id="g" type="number" placeholder="g">
+			</div>
+			<div class="form-el-container">
+				<p>Wellenlänge in nm:</p>
+				<input id="lambda" type="number" placeholder="lambda">
+			</div>
+			<div class="form-el-container">
+				<p>Anzahl der Wellenstrahlen:</p>
+				<input id="N" type="number" placeholder="N">
+			</div>
+			<div class="form-el-container">
+				<p>Abstand vom Spalt zum Schirm:</p>
+				<input id="a" type="number" placeholder="a">
+			</div>
+			<div class="form-el-container">
+				<p>Breite des Schirms in m:</p>
+				<input id="projektor" type="number" placeholder="projektor">
+			</div>
+			<div class="form-el-container">
+				<p>Amplitude oder Intensität anzeigen?</p>
+				<select id="method" form="Methode">
+					<option value="false">Amplitude</option>
+					<option value="true">Intensität</option>
+				</select>
+			</div>
+			<div id="btn-container">
+				<button id="zeichnen" type="button" onclick="draw()">zeichnen</button>
+				<button id="reset" type="button" onclick="init()">zurücksetzen</button>
+			</div>
+		</form>
+		</section>
+		<section id="canvases">
+			<canvas id="canvas" width="1000" height="400"></canvas>
+			<canvas id="canvas2" width="1000" height="70"></canvas>
+		</section>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
