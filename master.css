@@ -129,3 +129,10 @@ canvas {
 #muster {
   height: 4vh;
 }
+
+@media (max-width: 800px) {
+  html {
+    overflow: scroll;
+    font-size: 16px;
+  }
+}
