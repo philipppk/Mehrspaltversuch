@@ -81,3 +81,15 @@ form {
 #zeichnen {
   background-color: #00a652;
 }
+
+canvas {
+  width: 100%;
+}
+
+#graph {
+  height: 95vh;
+}
+
+#muster {
+  height: 4vh;
+}

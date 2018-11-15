@@ -1,9 +1,9 @@
-var canvas = document.getElementById("canvas");
+var canvas = document.getElementById("graph");
 var c = canvas.getContext('2d');
 var Breite = canvas.width;
 var Höhe = canvas.height;
 
-var canvas2 = document.getElementById("canvas2");
+var canvas2 = document.getElementById("muster");
 var c2 = canvas2.getContext('2d');
 var Breite2 = canvas2.width;
 var Höhe2 = canvas2.height;
